@@ -1,5 +1,7 @@
 # pelican-resume - Generate static resume web page
 
+### Ref: https://github.com/suheb/resume
+
 ## Quick Run ( .*/run.sh* )
 ```
 sed -i 's/THEME = .*'/THEME = "theme"/g'
