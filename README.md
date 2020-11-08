@@ -8,9 +8,11 @@ pelican content/ -s pelicanconf.py -p 8000
 pelican -l content -o output -s pelicanconf.py -p 8000 -r
 ```
 
-### The theme uses CDN bootstrap https://getbootstrap.com/docs/4.3/getting-started/introduction/ to fix the issue of missing background when printing/generate PDF
+### The theme uses CDN bootstrap to fix the issue of missing background when printing/generate PDF
+*https://getbootstrap.com/docs/4.3/getting-started/introduction/*
 
-### Awesome Font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css
+### Awesome Font
+*https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css*
 
 
 ## Building static web page
@@ -33,4 +35,4 @@ cdk deploy '*'
 ```
 
 ## Example
-![Image of Example](https://github.com/vumdao/pelican-resume/blob/main/example.png?raw=true)
+![Image of Example](https://github.com/vumdao/pelican-resume/blob/master/example.png?raw=true)
