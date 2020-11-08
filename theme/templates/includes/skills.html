@@ -1,0 +1,20 @@
+<!--https://cdnjs.com/libraries/font-awesome
+  --https://getbootstrap.com/docs/4.0/utilities/spacing/
+-->
+{% if SKILLS %}
+<section class="skills-section section">
+    <h2 class="section-title"><i class="fa fa-rocket"></i>SKILLS</h2>
+    {% for skill in SKILLS %}
+    <div class="skillset mb-3">
+        <div class="upper-row">
+            <h3 class="level-title">{{ skill['type']}}:</h3>
+        </div>
+        <div class="line px-2">
+            {% for line in skill['list'] %}
+            <li>{{ line }}</li>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</section><!--//skills-section-->
+{% endif%}

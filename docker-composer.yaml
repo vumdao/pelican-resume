@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  pelican:
+    restart: always
+    container_name: pelican
+    image: vorakl/alpine-pelican
+    ports:
+      - "8000:8000"
+    volumes:
+      - /mnt/pelican/site:/site
+    command: pelican -l /site/content/ -o /site/output/ -s /site/pelicanconf.py -p 8000 -r

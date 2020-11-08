@@ -1,0 +1,15 @@
+{% if PROJECTS %}
+<section class="section projects-section">
+    <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+    {% for project in PROJECTS %}
+    <div class="skillset mb-3">
+        <div class="item">
+            <h5 class="text-info">{{ project['title']}}</h5>
+            {% for line in project['tagline'] %}
+            <div class="skillset mb-1"><li>{{ line }}</li></div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</section><!--//section-->
+{% endif %}
