@@ -7,5 +7,5 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - /mnt/pelican/site:/site
+      - ${PWD}:/site
     command: pelican -l /site/content/ -o /site/output/ -s /site/pelicanconf.py -p 8000 -r
