@@ -32,6 +32,8 @@ vim cloudbuild.yaml
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/myresume', '.' ]
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/$PROJECT_ID/myresume']
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'run'
