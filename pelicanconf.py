@@ -9,12 +9,12 @@ DEFAULT_LANG = 'en'
 
 THEME = '/site/theme'
 
-AUTHOR = 'Vu Dao'
+AUTHOR = 'Van Dep Trai'
 
 SITENAME = 'My Resume'
 
 #Profile information
-NAME = 'Vu Dao'
+NAME = 'Van Dep Trai'
 TAGLINE = 'Senior Devops Engineer'
 PIC = 'profile.png'
 
